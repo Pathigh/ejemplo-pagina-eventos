@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @calendar.date %>
+</p>
+
+<p>
+  <strong>Valides:</strong>
+  <%= @calendar.tipo %>
+</p>
+<p>
+  <strong>Evento:</strong>
+  <%= @calendar.evento %>
+</p>
+
+<%= link_to 'Edit', edit_calendar_path(@calendar) %> |
+<%= link_to 'Back', calendars_path %>
